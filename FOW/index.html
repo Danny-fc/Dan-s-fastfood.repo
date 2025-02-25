@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="fastfood.png" type="x-icon">
+    <meta charset="UTF-8">
+    <title>Food Ordering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100 min-h-screen">
+    <header class="bg-gradient-to-r from-orange-500 to-red-500 text-white p-6 text-center shadow-lg">
+        <h1 class="text-4xl font-bold tracking-tight flex items-center justify-center">
+            <img src="C:\Users\GOL\Pictures\Black Yellow Minimalist Fast Food House Logo.png" alt="DFF Logo" class="h-10 w-10 mr-2">
+            Dan's Fast Food
+        </h1>
+        <p class="mt-2 text-lg">Order delicious food, delivered fast!</p>
+    </header>
+    <main class="max-w-5xl mx-auto p-6">
+        <section id="menu" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></section>
+        <aside id="cart" class="mt-10 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Your Cart</h2>
+            <ul id="cart-items" class="space-y-3"></ul>
+            <button id="checkout" class="mt-6 w-full bg-green-600 text-white py-3 rounded-lg font-medium hover:bg-green-700 transition duration-200">Checkout</button>
+        </aside>
+    </main>
+    <footer class="bg-gray-800 text-white p-6 mt-10">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section>
+                <h2 class="text-xl font-semibold mb-4">Customer Service</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Returns</a></li>
+                    <li><a href="#" class="hover:underline">Shipping</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="text-xl font-semibold mb-4">Newsletter</h2>
+                <p class="mb-4">Subscribe to our newsletter to get the latest updates and offers.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" class="w-full p-2 rounded-lg mb-2 text-gray-800">
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition duration-200">Subscribe</button>
+                </form>
+            </section>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
